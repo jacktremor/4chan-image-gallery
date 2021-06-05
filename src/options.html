@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: rgb(31, 41, 55);
+        font-family: sans-serif;
+        font-size: 16px;
+        margin: 0;
+        color: rgb(249, 250, 251);
+      }
+      .options {
+        width: 200px;
+        margin: auto;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      label {
+        display: flex;
+        gap: 8px;
+        align-items: baseline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="options">
+      <div style="display:flex;align-items:center;gap:8px;"><img style="height:1.5em;width:1.5em;" src="icons/4chan-128.png"/> <h2>Options<h2></div>
+      <div>
+        <label for="duration">Slideshow duration</label>
+        <div style="display: flex; gap: 8px; align-items: baseline">
+          <input
+            id="duration"
+            type="number"
+            value="3"
+            style="width: 50px; padding: 4px; margin-top: 4px;text-align: right;"
+          />
+          <span style="flex: 1">seconds</span>
+        </div>
+      </div>
+      <label for="counter">
+        <input type="checkbox" id="counter" checked /> Show counter
+      </label>
+
+      <label for="progress">
+        <input type="checkbox" id="progress" checked /> Show progress meter
+      </label>
+
+      <p>Press / or ? to View Help</p>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>

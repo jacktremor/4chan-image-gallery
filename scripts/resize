@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+mogrify -path ./images/resized -resize 1280x800^ -gravity Center -extent 1280x800 -format jpg ./images/screenshot*.png

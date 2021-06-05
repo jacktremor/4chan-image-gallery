@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+rm "./dist/4chan-image-gallery-x.zip" ./src
+zip -r "./dist/4chan-image-gallery-x.zip" src -x "*/\.DS_Store"
