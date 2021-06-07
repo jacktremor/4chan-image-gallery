@@ -8,7 +8,7 @@ const html = `<div id="fcig_lightbox">
     <div id="fcig_instructions">
       <div style="display:flex;flex-direction:column;align-items:center;gap:8px;">
         <div style="font-size:24px;font-weight:bold;">4chan Image Gallery X</div>
-        <div style="font-size:20px;">Version 1.0.0</div>
+        <div style="font-size:20px;">Version 1.0.1</div>
       </div>
       <table>
         <tr><th>/ or ?</th><td>View Help</td></tr>
