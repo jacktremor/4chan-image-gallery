@@ -237,6 +237,9 @@ const keymap = {
 };
 
 function handleKeyUp(event) {
+  const target = event.target;
+  if (target.tagName === "INPUT" || target.tagName === "TEXTAREA") return;
+
   const message = keymap[event.code];
   if (message) machine.send(message);
 }
